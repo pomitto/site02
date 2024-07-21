@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+ <!-- アイコン -->
+ <link rel="icon" href="images/icon.ico">
+ <link rel="apple-touch-icon" href="images/apple_touch_icon.png">
+
+ <!-- フォント -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+   href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500&display=swap"
+   rel="stylesheet">
+
+<!-- ｊQuery -->
+ <link rel="stylesheet" href="js/drawer-master/dist/css/drawer.css">
+
+ <!-- css -->
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description"
+    content="水平線に沈む夕陽を独り占めする、海辺の高級旅館。洗練された空間と行き届いたおもてなしが、非日常へと誘います。厳選された素材による極上の美食と、心温まるおもてなしで、至福のひとときを。">
+  <title>夕日ヶ浦温泉 夕凪庵</title>
+</head>
+
+<body class="booking">
+  <header>
+    <h1><a href="index.html"><img src="images/logo_black.png" alt="夕凪庵ロゴ" width="427" height="230"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="#X">予約</a></li>
+        <li><a href="#X">予約の確認・変更・キャンセル</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="booking_wrapper">
+    <main>
+      <p>ご希望の宿泊プランをお選びください。</p>
+      <ul class="plan_list">
+        <li class="plan"><a href="booking.html">プラン一覧</a></li>
+        <li><a href="#X">部屋一覧</a></li>
+        <li><a href="#X">空室カレンダー</a></li>
+      </ul>
+
+      <div class="search_wrapper">
+        <div class="search_outer box_1">
+
+          <div class="search_content">
+            <p>宿泊日</p>
+            <input type="text" placeholder="2024/07/11">
+          </div><!--search_content-->
+
+          <div class="search_content">
+            <p>拍数</p>
+            <select name="numberofnights" id="numberofnights">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+            </select>
+            <span>拍</span>
+          </div><!--search_content-->
+
+          <div class="search_content">
+            <p>部屋数</p>
+            <select name="roomcount" id="roomcount">
+              <option value="1" selected>1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+              <option value="1">4</option>
+              <option value="1">5</option>
+            </select>
+            <span>室</span>
+          </div><!--search_content-->
+
+          <div class="search_content">
+            <p>男性</p>
+            <select name="men" id="men">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span>名</span>
+          </div><!--search_content-->
+
+          <div class="search_content">
+            <p>女性</p>
+            <select name="women" id="women">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span>名</span>
+          </div><!--search_content-->
+
+          <div class="search_content">
+            <p>子ども</p>
+            <select name="children" id="children">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span>名</span>
+          </div><!--search_content-->
+
+        </div><!--search_outer-->
+
+        <div class="search_outer box_2">
+          <p>大人1名様あたりの料金</p>
+          <select name="pricemin" id="pricemin">
+            <option value="0" selected>下限なし</option>
+            <option value="8000">8000</option>
+            <option value="9000">9000</option>
+            <option value="10000">10000</option>
+            <option value="14000">14000</option>
+            <option value="18000">18000</option>
+            <option value="20000">20000</option>
+            <option value="25000">25000</option>
+            <option value="30000">30000</option>
+            <option value="35000">35000</option>
+            <option value="40000">40000</option>
+            <option value="50000">50000</option>
+          </select>
+          <span>～</span>
+          <select name="pricemax" id="">
+            <option value="0" selected>上限なし</option>
+            <option value="8000">8000</option>
+            <option value="9000">9000</option>
+            <option value="10000">10000</option>
+            <option value="14000">14000</option>
+            <option value="18000">18000</option>
+            <option value="20000">20000</option>
+            <option value="25000">25000</option>
+            <option value="30000">30000</option>
+            <option value="35000">35000</option>
+            <option value="40000">40000</option>
+            <option value="50000">50000</option>
+          </select>
+        </div><!--search_outer-->
+
+        <p class="a_box"><a href="#X">検索</a></p>
+      </div><!--search_wrapper-->
+
+      <div class="display_part">
+        <p>3件中1～3件を表示</p>
+        <ul>
+          <li>おすすめ順</li>
+          <li>料金が高い順</li>
+          <li>料金が安い順</li>
+        </ul>
+      </div><!--display_part-->
+
+      <section>
+        <h2>スタンダードプラン（1泊2食付き、全室露天風呂付）</h2>
+        <div class="plan_outer">
+          <p><img src="images/privatespa.jpg" alt="貸切温泉の写真" width="1596" height="1064"></p>
+          <div class="plan_content">
+            <p class="icon_box meal">朝食あり・夕食あり</p>
+            <p class="icon_box pay">現地決済・クレジットカード事前決済</p>
+            <p class="check_time">チェックイン　15:00～18：00<br>
+              チェックアウト　11:00</p>
+            <p class="content">旅の疲れを癒したいあなたにおすすめ！全室露天風呂付の客室で、海を眺めながらゆっくりと温泉をお楽しみいただけます。
+              夕食は、旬の食材を使った和食会席料理を、お部屋食またはレストランでご提供。朝食は、和食または洋食をお選びいただけます。</p>
+          </div><!--plan_content-->
+        </div><!--plan_outer-->
+
+        <ul>
+          <li>
+            <img src="images/room_yunagi.jpg" alt="夕凪の写真" width="2000" height="1333">
+            <div class="plan_room_outer">
+              <h3>【夕凪】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      48,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_midoriumi.jpg" alt="碧海の写真" width="1600" height="1062">
+            <div class="plan_room_outer">
+              <h3>【碧海】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      48,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_kurage_.jpg" alt="海月の写真" width="1551" height="1034">
+            <div class="plan_room_outer">
+              <h3>【海月】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      42,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_yunami.jpg" alt="夕波の写真" width="1600" height="1067">
+            <div class="plan_room_outer">
+              <h3>【夕波】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      42,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_yuduki.jpg" alt="夕月の写真" width="1598" height="1065">
+            <div class="plan_room_outer">
+              <h3>【夕月】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      42,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>素泊まりプラン（1泊食事なし・全室露天風呂付）</h2>
+        <div class="plan_outer">
+          <p><img src="images/roomspa_2.jpg" alt="碧海の露天風呂の写真" width="1600" height="1066"></p>
+          <div class="plan_content">
+            <p class="icon_box meal">朝食なし・夕食なし</p>
+            <p class="icon_box pay">現地決済・クレジットカード事前決済</p>
+            <p class="check_time">チェックイン　15:00～18：00<br>
+              チェックアウト　11:00</p>
+            <p class="content">自分だけのペースで過ごしたいあなたにおすすめ！全室露天風呂付の客室で、海を眺めながらゆっくりと温泉をお楽しみいただけます。夕食と朝食は、ご自身で用意していただくことも可能です。
+            </p>
+          </div><!--plan_content-->
+        </div><!--plan_outer-->
+
+        <ul>
+          <li>
+            <img src="images/room_yunagi.jpg" alt="夕凪の写真" width="2000" height="1333">
+            <div class="plan_room_outer">
+              <h3>【夕凪】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      41,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_midoriumi.jpg" alt="碧海の写真" width="1600" height="1062">
+            <div class="plan_room_outer">
+              <h3>【碧海】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      41,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_kurage_.jpg" alt="海月の写真" width="1551" height="1034">
+            <div class="plan_room_outer">
+              <h3>【海月】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      35,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_yunami.jpg" alt="夕波の写真" width="1600" height="1067">
+            <div class="plan_room_outer">
+              <h3>【夕波】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      35,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_yuduki.jpg" alt="夕月の写真" width="1598" height="1065">
+            <div class="plan_room_outer">
+              <h3>【夕月】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      35,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>朝食なしプラン（1泊夕食のみ朝食なし・全室露天風呂付）</h2>
+        <div class="plan_outer">
+          <p><img src="images/cuisine.jpg" alt="夕食の懐石料理の写真" width="1596" height="1064"></p>
+          <div class="plan_content">
+            <p class="icon_box meal">朝食なし・夕食あり</p>
+            <p class="icon_box pay">現地決済・クレジットカード事前決済</p>
+            <p class="check_time">チェックイン　15:00～18：00<br>
+              チェックアウト　11:00</p>
+            <p class="content">
+              夕食はしっかり食べたいけど、朝食はゆっくり寝ていたいあなたにおすすめ！全室露天風呂付の客室で、海を眺めながらゆっくりと温泉をお楽しみいただけます。夕食は、旬の食材を使った和食会席料理を、お部屋食またはレストランでご提供。朝食は、ご自身で用意していただくことも可能です。
+            </p>
+          </div><!--plan_content-->
+        </div><!--plan_outer-->
+
+        <ul>
+          <li>
+            <img src="images/room_yunagi.jpg" alt="夕凪の写真" width="2000" height="1333">
+            <div class="plan_room_outer">
+              <h3>【夕凪】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      47,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_midoriumi.jpg" alt="碧海の写真" width="1600" height="1062">
+            <div class="plan_room_outer">
+              <h3>【碧海】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      47,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_kurage_.jpg" alt="海月の写真" width="1551" height="1034">
+            <div class="plan_room_outer">
+              <h3>【海月】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      41,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_yunami.jpg" alt="夕波の写真" width="1600" height="1067">
+            <div class="plan_room_outer">
+              <h3>【夕波】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      41,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+
+          <li>
+            <img src="images/room_yuduki.jpg" alt="夕月の写真" width="1598" height="1065">
+            <div class="plan_room_outer">
+              <h3>【夕月】露天風呂付　禁煙</h3>
+              <div class="plan_room_content">
+                <div class="plan_room_inner">
+                  <p>
+                    <span class="sub">
+                      1名様料金 ( 2名様1室利用時 )
+                    </span>
+                    <span>
+                      41,000円～
+                    </span>
+                  </p>
+                </div><!--plan_room_inner-->
+                <p class="a_box"><a href="#X">詳細・ご予約</a></p>
+              </div><!--plan_room_content-->
+            </div><!--plan_room_outer-->
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div><!--.booking_wrapper-->
+  <footer class="booking_footer">
+    <h2><img src="images/logo_white.png" alt="夕日ヶ浦温泉 夕凪庵" width="427" height="230"></h2>
+    <address>
+      TEL:1234-56-7890<br>〒629-3245<br>京都府京丹後市網野町浜詰46-0
+    </address>
+  </footer>
+</body>
+
+</html>

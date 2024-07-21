@@ -1,0 +1,93 @@
+/*---------------------
+-drawerのカスタマイズ
+---------------------*/
+/* ハンバーガーアイコンのサイズ感 */
+.drawer-hamburger{
+  padding: 40px;
+  height: 40px;
+  width: 40px;
+}
+/* ハンバーガーアイコンのカラー */
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+    background: #fff;
+}
+/* ハンバーガー線の細さ */
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+    height: 1px;
+}
+/* ナビの背景色 */
+.drawer-nav {
+  background: #636A63;
+}
+/* ナビの背景を前面に出す */
+.drawer--right.drawer-open .drawer-nav{
+  width: 100%;
+}
+
+/* アイコンの位置 */
+.drawer--right.drawer-open .drawer-hamburger{
+  right:0;
+}
+/* スクロール */
+.drawer--top.drawer-open .drawer-nav {
+  top: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.drawer--left.drawer-open .drawer-nav,
+.drawer--left .drawer-hamburger,
+.drawer--left.drawer-open .drawer-navbar .drawer-hamburger {
+  left: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.drawer--right.drawer-open .drawer-nav,
+.drawer--right .drawer-hamburger,
+.drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+  right: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*---------------------
+- その他設定
+---------------------*/
+/* menu */
+.nav-menu{
+  padding:27px 40px;
+  max-width: 1024px;
+  width: 100%;
+}
+/* アコーディオン */
+.acd-menu__box{
+  display:none;
+  padding-bottom:22px;
+}
+
+
+/* inview */
+.fadeIn {
+  opacity: 0;
+  transition: 2.3s;
+}
+.fadeIn .delay{
+  transition-delay: 1s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}
+.fadeIn_up {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 2s;
+}
+.fadeIn_up.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}

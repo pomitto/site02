@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* box-sizing: border-box;を設定 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/* フォントサイズの拡大を防ぐ */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size: 62.5%;
+}
+ 
+/* デフォルトのマージンを削除、作成するCSSの制御を改善するため */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,figure,input,textarea,p,blockquote,th,td {
+  margin: 0;
+  padding:0;
+}
+ 
+/* リストのスタイルを削除、これはデフォルトのスタイルが削除されることを示唆します */
+ul,
+ol {
+  list-style: none;
+}
+ 
+/* bodyのデフォルトを設定 */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+ 
+/* 見出しやインタラクティブ要素のline-heightを設定 */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+ 
+/* 見出しのテキスト折り返しをbalanceに設定 */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+ 
+/* classを持たないa要素はデフォルトのスタイルを継承 */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+}
+ 
+/* 画像の扱いを簡単にする */
+img,
+picture {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+ 
+/* inputやbuttonなどのfontは継承 */
+input, button,
+textarea, select {
+  font: inherit;
+}
+ 
+/* rows属性のないtextareasが小さくならないようにする */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+ 
+/* アンカーされている要素には余分なスクロールマージンが必要 */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+fieldset,img {
+	border:0;
+}
+
+caption,th {
+	text-align:left;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
