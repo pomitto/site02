@@ -33,7 +33,8 @@
   right:0;
 }
 /* スクロール */
-.drawer--top.drawer-open .drawer-nav {
+/* ないかもしれない */
+/* .drawer--top.drawer-open .drawer-nav {
   top: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -45,7 +46,9 @@
   left: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
+} */
+
+
 
 .drawer--right.drawer-open .drawer-nav,
 .drawer--right .drawer-hamburger,
@@ -54,6 +57,12 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+/* これがないとスマホサイズでホイール操作できなかった */
+.drawer--right.drawer-open .drawer-nav{
+  height: 100%;
+}
+
 
 /*---------------------
 - その他設定
