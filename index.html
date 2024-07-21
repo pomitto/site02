@@ -329,9 +329,10 @@
     $(document).ready(function () {
       $('.drawer').drawer({
         iscroll: {
-          mouseWheel: false
-
-        }
+            mouseWheel: false,
+            disablePointer: true, // これがポイント（っぽい）
+            disableTouch: true,
+        },
       });
     });
     $(function () {
