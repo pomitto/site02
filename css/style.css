@@ -46,6 +46,12 @@ h1{
   font-size: 1.6rem;
   /* color: #fff; */
 }
+.nav_inner a{
+  background-image: linear-gradient(#fff,#fff);
+  background-size: 0 1px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
 .global ul .nav_inner{
   width: calc(100% - 95px - 118px - 40px);
   display: flex;
@@ -53,7 +59,7 @@ h1{
 }
 .global ul li.booking a{
   width: 100%;
-  padding: 20px 35px;
+  padding: 20px 33px;
   background-color: #A49A66;
   text-align: center;
 }
@@ -159,7 +165,7 @@ main .section_3 .a_box::before{
   display: inline-block;
   transform: scale(0.75);
   opacity: 0.3;
-  left: 0;
+  left: -190px;
   bottom: -200px;
 }
 main .section_1 .a_box::after,
@@ -168,7 +174,7 @@ main .section_3 .a_box::after{
   content: url(../images/wave1_1.png);
   display: inline-block;
   opacity: 0.3;
-  right: 50px;
+  right: -100px;
   bottom: -110px;
 }
 main h2{
@@ -578,11 +584,13 @@ footer .footer_booking_wrapper{
 .booking nav{
   max-width: 265px;
   width: 100%;
-  font-size: 1.4rem;
 }
 .booking nav ul{
   display: flex;
   justify-content: space-between;
+}
+.booking nav ul .header_a{
+  font-size: 1.4rem;
 }
 .booking_wrapper{
   max-width: 800px;
@@ -595,6 +603,7 @@ footer .footer_booking_wrapper{
   display: flex;
   align-items: end;
   margin-top: 38px;
+  font-family:  "Noto Sans JP", sans-serif;
 }
 .plan_list li{
   width: calc(100% / 3);
@@ -611,11 +620,15 @@ footer .footer_booking_wrapper{
   line-height: 103px;
   background-color: #fff;
 }
+.search_wrapper_2{
+  display: none;
+}
 .search_wrapper{
   background-color: #F2EDD2;
   border: 1px solid #989898;
   margin-top: 40px;
   padding: 13px 14px;
+  font-family:  "Noto Sans JP", sans-serif;
 }
 .search_wrapper .search_outer{
   display: flex;
@@ -627,6 +640,7 @@ footer .footer_booking_wrapper{
 .search_wrapper .search_outer input,
 .search_wrapper .search_outer select{
   padding: 3px;
+  padding-bottom: 5px;
   border-radius: 4px;
   border: 1px solid;
 }
@@ -661,6 +675,9 @@ footer .footer_booking_wrapper{
   justify-content: space-between;
   margin-top: 45px;
 }
+.display_part_2{
+  display: none;
+}
 .display_part p{
   width: 120px;
 }
@@ -669,6 +686,12 @@ footer .footer_booking_wrapper{
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.booking .introduction h2,
+.booking section .plan_outer,
+.booking section ul{
+  max-width: 800px;
+  margin: 0 auto;
 }
 .booking section{
   margin-top: 47px;
@@ -794,6 +817,11 @@ footer .footer_booking_wrapper{
   font-size: 1.6rem;
   margin-top: 52px;
 }
+.introduction_2{
+  display: none;
+}
+
+
 
 @media screen and (max-width:1024px){
   .wrapper{
@@ -999,6 +1027,98 @@ footer .footer_booking_wrapper{
     max-width: calc(100% - 230px);
     gap: 70px;
   }
+
+  /* spa.html */
+.spa main section p{
+  padding: 0;
+}
+.spa main .lead,
+.spa main .lead_detail,
+.spa main .spa_list,
+.spa main .information{
+  padding: 0 82px;
+}  
+.spa_main_visual {
+  height: 508px;
+}
+.spa_main_visual h2 
+{
+  padding-top: 340px;
+}
+.spa main .spa_list{
+  margin-top: 150px;
+}
+.spa main .spa_list section:first-child{
+  margin-top: 0;
+}
+.spa main .img_box {
+  width: 100%;
+}
+.spa main .information{
+  padding: 82px 40px;
+  width: 79.5%;
+}
+
+/* booking.html */
+.booking header,
+.booking .lead,
+.booking_wrapper,
+.introduction h2,
+.booking section .plan_outer,
+.booking section ul{
+  padding: 0 82px;
+}
+.booking header{
+  margin: 0;
+  margin-top: 68px;
+  width: 100%;
+}
+.search_wrapper .search_outer{
+  justify-content: space-between;
+  gap: 0;
+}
+.booking section{
+margin-top: 40px;
+}
+.booking section h2 {
+  font-size: 2.2rem;
+  letter-spacing: 0;
+}
+.booking section .plan_outer{
+  gap: 15px;
+  justify-content: left;
+}
+.booking section .plan_content {
+  width: calc(100% - 330px - 15px);
+}
+.booking section .icon_box {
+  padding-left: 40px;
+}
+.booking section .meal,
+.booking section .pay {
+  background-size: 32px;
+}
+.booking section p{
+  margin: 0;
+  padding: 0;
+}
+.booking section p img {
+  width: 330px;
+}
+.booking section ul{
+  margin-top: 50px;
+}
+.booking section ul li{
+  gap: 0;
+}
+.booking section ul img{
+  width: 210px;
+  height: auto;
+}
+.booking ul li .plan_room_outer{
+  width: calc(100% - 210px);
+  padding-left: 10px;
+}
 }
 @media screen and (max-width:767px) {
   .wrapper{
@@ -1193,5 +1313,273 @@ footer .footer_booking_wrapper{
   }
   .footer_container .small{
     display: none;
+  }
+
+  /* spa.html */
+  .spa main .lead,
+  .spa main .lead_detail,
+  .spa main .spa_list,
+  .spa main .information{
+    padding: 0 42px;
+  }  
+  .spa_main_visual {
+    height: 280px;
+  }
+  .spa .main_visual_content{
+    font-size: 1.4rem;
+    margin-top: 110px;
+  }
+  .spa_main_visual h2 {
+    padding-top: 177px;
+    font-size: 3.0rem;
+  }
+  .spa main .spa_list{
+    margin-top: 85px;
+  }
+  .spa main .spa_list section{
+    margin-top: 100px;
+  }
+  .spa main h3{
+    font-size: 2.2rem;
+  }
+  .spa main .img_box {
+    width: 100%;
+  }
+  .spa main .information{
+    width: 100%;
+    padding: 45px 42px;
+    margin-top: 150px;
+  }
+  .spa main .information h3{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .spa main .information h4{
+    font-size: 1.6rem;
+    margin-top: 30px;
+  }
+  .spa main .information:last-child h4{
+    margin-top: 37px;
+  }
+  .spa main .information p{
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-top: 15px;
+  }
+
+  /* booking.html */
+  .booking header{
+    flex-direction: column;
+    gap: 21px;
+  }
+  .booking header,
+  .booking .lead,
+  .booking_wrapper,
+  .introduction_2 h2,
+  .booking section .plan_outer,
+  .booking section ul{
+  padding: 0 42px;
+  }
+  .booking_wrapper {
+  margin-top: 43px;
+  }
+  .booking_wrapper .plan_list{
+    margin-top: 24px;
+    padding: 0;
+  }
+  .search_wrapper {
+    margin-top: 20px;
+  }
+  .search_wrapper{
+    display: none;
+  }
+  .search_wrapper_2{
+    display: block;
+  }
+  .search_wrapper_2{
+    background-color: #F2EDD2;
+    border: 1px solid #989898;
+    margin-top: 40px;
+    padding: 13px 15px;
+    font-family:  "Noto Sans JP", sans-serif;
+  }
+  .search_wrapper_2 .search_outer{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+  }
+  .search_wrapper_2 .search_outer p{
+    margin-bottom: 8px;
+  }
+  .search_wrapper_2 .search_outer input,
+  .search_wrapper_2 .search_outer select{
+    padding: 3px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+  .search_wrapper_2 .search_outer input{
+    width: 100%;
+  }
+  .search_wrapper_2 .search_outer span{
+    margin-left: 5px;
+  }
+  .search_wrapper_2 .search_outer{
+    margin-bottom: 16px;
+  }
+  .search_wrapper_2 .box_2{
+    gap: 20px;
+  }
+  .search_wrapper_2 .box_2 .search_content{
+    width: 30%;
+  }
+  .search_wrapper_2 .box_2 select{
+    width: 60%;
+  }
+  .search_wrapper_2 .box_3{
+    justify-content: space-between;
+    gap: 0;
+  }
+  .search_wrapper_2 .box_3 .search_content{
+    width: 30%;
+  }
+  .search_wrapper_2 .box_3 select{
+    width: 60%;
+  }
+  .search_wrapper_2 .box_4{
+    margin-top: 7px;
+    gap: 10px;
+  }
+  .search_wrapper_2 .a_box{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+  }
+  .search_wrapper_2 .a_box a{
+    background-color: #A49A66;
+    line-height: 38px;
+    color: #fff;
+    margin-top: 27px;
+  }
+  .display_part{
+    display: none;
+  }
+  .display_part_2{
+    margin-top: 50px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .display_part_2 .recommend{
+    padding: 4px 23px 5px 13px;
+    border: 1px solid #171717;
+    border-radius: 3px;
+  }
+  .recommend{
+    position: relative;
+    padding: 0 0 0 0;
+}
+.recommend::after{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    border: 4px solid transparent;
+    border-top: 4px solid #555;   /* 好みで色を変えてください */  
+}
+.introduction{
+  display: none;
+}
+.introduction_2{
+  display: block;
+}
+.booking section{
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+.booking section h2{
+  margin-top: 30px;
+  font-size: 2.0rem;
+}
+.booking section p.img_box img {
+  width: 100%;
+  height:  auto;
+}
+.booking section .plan_outer{
+  flex-direction: column;
+}
+.booking section .plan_content{
+  width: 100%;
+}
+.booking section .meal,
+.booking section .pay {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.booking section .pay{
+  margin-top: 10px;
+}
+.booking section .content{
+  margin-top: 30px;
+  font-size: 1.6rem;
+}
+.booking section ul li{
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.booking section ul img{
+  width: 100%;
+}
+.booking ul li .plan_room_outer {
+  width: 100%;
+  padding: 0;
+}
+.booking ul li .plan_room_content {
+  flex-direction: column;
+}
+.booking ul li .plan_room_inner{
+  width: 100%;
+}
+.booking ul li .sub{
+  margin-bottom: 5px;
+}
+main section .a_box{
+  margin-top: 15px;
+  width: 100%;
+}
+.booking ul li .a_box a{
+  display: block;
+  width: 100%;
+  line-height: 2.95;
+}
+.booking section:last-child{
+  margin-bottom: 110px;
+}
+}
+
+
+@media (hover:hover){
+  .nav_inner a:hover{
+    background-size: 100% 1px;
+    transition: all .3s;
+  }
+  .booking header nav a:hover{
+    border-bottom: 1px solid #171717;
+  }
+  .footer_booking_wrapper .footer_booking_inner a:hover,
+  .footer_booking_list a:hover,
+  .footer_container a:hover{
+    opacity: 0.8;
+  }
+  .global ul li.booking a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #A49A66;
+    transition: all 0.5s ease-in-out;
+  }
+  .booking ul li .a_box a:hover {
+background-color: #fff;
+border: 1px solid #A49A66;
+color: #A49A66;
+transition: all 0.5s ease-in-out;
   }
 }
