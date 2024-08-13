@@ -33,23 +33,21 @@
   <title>夕日ヶ浦温泉 夕凪庵</title>
 </head>
 
-<body class="drawer drawer--right">
+<body class="index drawer drawer--right">
   <div class="wrapper">
     <header class="main_header imgBox inview fadeIn">
       <div class="global_main">
         <h1><a href="index.html"><img src="images/logo_white.png" alt="夕日ヶ浦温泉 夕凪庵" width="427" height="230"></a></h1>
         <nav class="global">
           <ul>
-            <div class="nav_inner">
-              <li><a href="spa.html">温泉</a></li>
-              <li><a href="#X">客室</a></li>
-              <li><a href="#X">食事</a></li>
-              <li><a href="#X">館内施設</a></li>
-              <li><a href="#X">観光情報</a></li>
-              <li><a href="#X">お知らせ</a></li>
-              <li><a href="#X">よくある質問</a></li>
-              <li><a href="#X">アクセス</a></li>
-            </div><!--.nav_inner-->
+            <li><a href="spa.html"><span>温泉</span></a></li>
+            <li><a href="#X"><span>客室</span></a></li>
+            <li><a href="#X"><span>食事</span></a></li>
+            <li><a href="#X"><span>館内施設</span></a></li>
+            <li><a href="#X"><span>観光情報</span></a></li>
+            <li><a href="#X"><span>お知らせ</span></a></li>
+            <li><a href="#X"><span>よくある質問</span></a></li>
+            <li><a href="#X"><span>アクセス</span></a></li>
             <li class="booking"><a href="booking.html">ご予約</a></li>
             <li class="language">language<span class="dli-chevron-down"></span></li>
           </ul>
@@ -64,37 +62,38 @@
           <span class="drawer-hamburger-icon"></span>
         </button>
         <nav class="drawer-nav nav" role="navigation">
-            <h2><a href="index.html"><img src="images/logo_white.png" alt="夕日ヶ浦温泉 夕凪庵" width="427" height="230"></a>
-            </h2>
-            <ul class="nav-menu">
-              <div class="hamburger_outer">
-                <div class="hamburger_inner">
-                  <li class="nav-menu__item"><a href="spa.html">温泉</a></li>
-                  <li class="nav-menu__item"><a href="#">客室</a></li>
-                  <li class="nav-menu__item"><a href="#">食事</a></li>
-                  <li class="nav-menu__item"><a href="#">館内施設</a></li>
-                </div><!--.hamburger_inner-->
-                <div class="hamburger_inner">
-                  <li class="nav-menu__item"><a href="#">観光情報</a></li>
-                  <li class="nav-menu__item"><a href="#">お知らせ</a></li>
-                  <li class="nav-menu__item"><a href="#">よくある質問</a></li>
-                  <li class="nav-menu__item"><a href="#">アクセス</a></li>
-                  <li class="nav-menu__item"><a href="#">お問い合わせ</a></li>
-                </div><!--.hamburger_inner-->
-              </div><!--.hamburger_outer-->
-              <li class="booking"><a href="booking.html">宿泊予約</a></li>
-              <div class="policy_1">
-                <li><a href="#X">宿泊約款</a></li>
-                <li><a href="#X">プライバシーポリシー</a></li>
-              </div><!--.policy-->
-              <div class="policy_2">
-                <li><a href="#X">language</a></li>
-                <div class="sns">
-                  <li><a href="#X"><img src="images/SVG/logo_x.svg" alt="公式Xのページはこちらから"></a></li>
-                  <li><a href="#X"><img src="images/SVG/logo_instagram.svg" alt="公式インスタグラムのページはこちらから"></a></li>
-                </div><!--.sns-->
-              </div><!--.policy-->
+          <h2><a href="index.html"><img src="images/logo_white.png" alt="夕日ヶ浦温泉 夕凪庵" width="427" height="230"></a>
+          </h2>
+          <ul class="nav-menu">
+            <!-- <div class="hamburger_outer">
+              <div class="hamburger_inner"> -->
+            <li class="nav-menu__item"><a href="spa.html">温泉</a></li>
+            <li class="nav-menu__item"><a href="#">客室</a></li>
+            <li class="nFav-menu__item"><a href="#">食事</a></li>
+            <li class="nav-menu__item"><a href="#">館内施設</a></li>
+            <!-- </div>.hamburger_inner -->
+            <!-- <div class="hamburger_inner"> -->
+            <li class="nav-menu__item"><a href="#">観光情報</a></li>
+            <li class="nav-menu__item"><a href="#">お知らせ</a></li>
+            <li class="nav-menu__item"><a href="#">よくある質問</a></li>
+            <li class="nav-menu__item"><a href="#">アクセス</a></li>
+            <li class="nav-menu__item"><a href="#">お問い合わせ</a></li>
+            <!-- </div>.hamburger_inner -->
+            <!-- </div>.hamburger_outer -->
             </ul>
+            <div class="booking"><a href="booking.html">宿泊予約</a></div>
+          
+          <ul class="policy_1">
+            <li><a href="#X">宿泊約款</a></li>
+            <li><a href="#X">プライバシーポリシー</a></li>
+          </ul><!--.policy-->
+          <div class="policy_2">
+            <a href="#X">language</a>
+            <ul class="sns">
+              <li><a href="#X"><img src="images/SVG/logo_x.svg" alt="公式Xのページはこちらから"></a></li>
+              <li><a href="#X"><img src="images/SVG/logo_instagram.svg" alt="公式インスタグラムのページはこちらから"></a></li>
+            </ul><!--.sns-->
+          </div><!--.policy-->
         </nav>
       </div><!--.global_hamburger-->
 
@@ -329,9 +328,10 @@
     $(document).ready(function () {
       $('.drawer').drawer({
         iscroll: {
-            mouseWheel: false,
-            disablePointer: true, // これがポイント（っぽい）
-            disableTouch: true,
+          mouseWheel: false,
+          scrollY: true,
+          disablePointer: true, // これがポイント（っぽい）
+          disableTouch: true,
         },
       });
     });
